@@ -1,1 +1,87 @@
-<!DOCTYPE html><html lang='ar'><head><meta charset='UTF-8'><title>أدمن</title></head><body><h1>أهلاً أدمن</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم الأدمن</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .admin-panel {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body style="background: linear-gradient(135deg, #667eea, #764ba2); font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="admin-panel">
+    <h2>لوحة التحكم - تسجيل طلبات الفنادق</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>الشهر</th>
+          <th>عدد الطلبات</th>
+          <th>الإجراء</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>يناير</td>
+          <td>4</td>
+          <td><button>عرض التفاصيل</button></td>
+        </tr>
+        <tr>
+          <td>فبراير</td>
+          <td>2</td>
+          <td><button>عرض التفاصيل</button></td>
+        </tr>
+        <tr>
+          <td>مارس</td>
+          <td>0</td>
+          <td><button>إضافة طلب</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
